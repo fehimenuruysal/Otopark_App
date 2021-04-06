@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AracGirisi"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/plaka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Plaka:"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/girissaati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Giriş Saati:"
+        android:inputType="time"
+        app:layout_constraintBottom_toTopOf="@+id/aracgirisonayla"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/aracgirisonayla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="208dp"
+        android:text="ONAYLA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/girissaati"
+        app:layout_constraintTop_toBottomOf="@+id/girissaati" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="39dp"
+        android:text="PLAKA"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/plaka"
+        app:layout_constraintEnd_toEndOf="@+id/plaka"
+        app:layout_constraintStart_toStartOf="@+id/plaka"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:text="GİRİŞ SAATİ"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/girissaati"
+        app:layout_constraintStart_toStartOf="@+id/plaka"
+        app:layout_constraintTop_toBottomOf="@+id/plaka" />
+
+</android.support.constraint.ConstraintLayout>

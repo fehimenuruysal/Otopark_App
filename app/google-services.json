@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "65069430553",
+    "firebase_url": "https://otoparkk-1ed39.firebaseio.com",
+    "project_id": "otoparkk-1ed39",
+    "storage_bucket": "otoparkk-1ed39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65069430553:android:86b2a67a87244cb2",
+        "android_client_info": {
+          "package_name": "com.example.msi.otopark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65069430553-79kajonv8dnc5qfphj3n0ot10fmsdluc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.msi.otopark",
+            "certificate_hash": "92a97a7e6c25fa6d9fa161f7e5e8bbe788e1154f"
+          }
+        },
+        {
+          "client_id": "65069430553-prt9tup8durltgg9r75f4vcia84m095r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKhORkPb4Cg7708rw3wJFM5pBK-vj_x1Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65069430553-prt9tup8durltgg9r75f4vcia84m095r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

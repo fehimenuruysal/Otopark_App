@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.KullaniciGiris"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/araclistele"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="54dp"
+        android:text="ARAÇ LİSTESİ GÖRÜNTÜLEME"
+        app:layout_constraintBottom_toTopOf="@+id/aracgiris"
+        app:layout_constraintEnd_toStartOf="@+id/kazanchesapla"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/kazanchesapla"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="54dp"
+        android:text="GÜNLÜK KAZANÇ HESAPLAMA"
+        app:layout_constraintBottom_toTopOf="@+id/araccikis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/araclistele"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/aracgiris"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="58dp"
+        android:text="ARAÇ GİRİŞ EKRANI"
+        app:layout_constraintBottom_toTopOf="@+id/gorevli_ekle"
+        app:layout_constraintEnd_toStartOf="@+id/araccikis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/araclistele" />
+
+    <Button
+        android:id="@+id/araccikis"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="51dp"
+        android:text="ARAÇ ÇIKIŞ EKRANI"
+        app:layout_constraintBottom_toTopOf="@+id/silme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/aracgiris"
+        app:layout_constraintTop_toBottomOf="@+id/kazanchesapla" />
+
+    <Button
+        android:id="@+id/musteriyegec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="36dp"
+        android:text="Muşteriye Geç"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/silme" />
+
+    <Button
+        android:id="@+id/gorevli_ekle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="137dp"
+        android:text="GÖREVLİ EKLE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/silme"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="ekleme_gecis"
+        app:layout_constraintTop_toBottomOf="@+id/aracgiris" />
+
+    <Button
+        android:id="@+id/silme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:text="GÖREVLİ SİLME"
+        app:layout_constraintBottom_toTopOf="@+id/musteriyegec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gorevli_ekle"
+        android:onClick="silme_gecis"
+        app:layout_constraintTop_toBottomOf="@+id/araccikis" />
+
+</android.support.constraint.ConstraintLayout>
